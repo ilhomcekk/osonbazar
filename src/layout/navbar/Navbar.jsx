@@ -284,8 +284,12 @@ const Navbar = ({ isAuth, basketProductsLength, wishListsLength }) => {
             <Container maxWidth="xl">
               <div className="grid grid-cols-10 nav-grid">
                 <div className="bottom-left grid grid-cols-10 gap-x-2">
-                  <Link className="flex items-center logo-block" to="/">
-                    <img className="navbar-logo" src={Logo} alt="LOGO" />
+                  <Link
+                    className="flex items-center logo-block font-bold text-[22px]"
+                    to="/"
+                  >
+                    {/* <img className="navbar-logo" src={Logo} alt="LOGO" /> */}
+                    OSONBAZAR
                   </Link>
                   <div className="pr-4 pl-2 catalog-block">
                     <div
@@ -305,8 +309,9 @@ const Navbar = ({ isAuth, basketProductsLength, wishListsLength }) => {
                   >
                     <HiBars3 size={24} />
                   </div>
-                  <Link to="/" className="mobile-logo">
-                    <img src={Logo} alt="" />
+                  <Link to="/" className="mobile-logo text-center font-bold">
+                    {/* <img src={Logo} alt="" /> */}
+                    OSONBAZAR
                   </Link>
                   <div
                     onClick={() => navigate("/special-order")}

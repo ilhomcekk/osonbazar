@@ -52,8 +52,9 @@ const Footer = () => {
       <Container maxWidth="xl">
         <div className="grid lg:grid-cols-4 md:grid-cols-2">
           <div className="footer-box">
-            <Link to="/" className="block mb-6">
-              <img className="footer-logo" src={Logo} alt="" />
+            <Link to="/" className="block mb-6 text-[22px] font-bold">
+              {/* <img className="footer-logo" src={Logo} alt="" /> */}
+              OSONBAZAR
             </Link>
             {/* {phoneNumbers.length > 0 &&
               phoneNumbers?.map((item) => (
