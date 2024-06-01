@@ -82,10 +82,7 @@ const Cart = ({ cart }) => {
           <BiHeart size={24} />
         </button>
         <div className="cart-item">
-          <div
-            onClick={() => navigate(`/product/${cart.id}`)}
-            className="cart-image"
-          >
+          <div className="cart-image">
             <img
               src={
                 cart?.front_image ||
