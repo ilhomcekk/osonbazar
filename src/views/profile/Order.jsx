@@ -226,10 +226,7 @@ const Order = () => {
                             </div> */}
                             <div className="department-price">
                               <div className="price">
-                                {numberWithCommas(
-                                  item?.product?.price * exchangeRate
-                                )}{" "}
-                                so'm
+                                {numberWithCommas(item?.product?.price)} so'm
                               </div>
                               {/* <div className="price_old">3 474 240 Сум</div> */}
                             </div>

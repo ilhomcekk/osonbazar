@@ -133,7 +133,7 @@ const Profile = () => {
               <div>********</div>
             </div>
             <div className="flex items-center justify-between">
-              <Button
+              {/* <Button
                 color="error"
                 size="large"
                 className="!my-6"
@@ -141,7 +141,7 @@ const Profile = () => {
                 onClick={handleClickOpenModal}
               >
                 O'zgartirish
-              </Button>
+              </Button> */}
               <Button
                 color="error"
                 size="large"
