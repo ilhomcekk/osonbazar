@@ -85,7 +85,7 @@ const Detail = ({ products, user }) => {
     setParams((prev) => {
       return {
         ...prev,
-        product: product.id,
+        product: product?.id,
       };
     });
   };

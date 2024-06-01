@@ -104,7 +104,7 @@
       }
     }
     .navbar-logo {
-      height: auto;
+      height: 50px;
       width: auto;
       max-width: 100%;
     }
@@ -227,10 +227,11 @@
         @media (max-width: 767px) {
           margin-right: auto !important;
           margin-left: auto !important;
-          height: 28px;
+          height: 40px;
         }
         img {
           height: 100%;
+          margin: auto;
         }
       }
     }

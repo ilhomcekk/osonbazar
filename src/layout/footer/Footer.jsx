@@ -6,7 +6,7 @@ import { AiOutlineArrowUp } from "react-icons/ai";
 // import { FaInstagramSquare, FaYoutubeSquare } from "react-icons/fa";
 // import { FaTelegramPlane } from "react-icons/fa";
 import { IconButton } from "@mui/material";
-import Logo from "../../assets/images/logo.jpg";
+import Logo from "../../assets/images/logo.png";
 import $host from "../../http";
 
 const Footer = () => {
@@ -53,8 +53,8 @@ const Footer = () => {
         <div className="grid lg:grid-cols-4 md:grid-cols-2">
           <div className="footer-box">
             <Link to="/" className="block mb-6 text-[22px] font-bold">
-              {/* <img className="footer-logo" src={Logo} alt="" /> */}
-              OSONBAZAR
+              <img className="footer-logo" src={Logo} alt="" />
+              {/* OSONBAZAR */}
             </Link>
             {/* {phoneNumbers.length > 0 &&
               phoneNumbers?.map((item) => (

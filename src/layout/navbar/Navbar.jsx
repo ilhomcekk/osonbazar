@@ -26,7 +26,7 @@ import { AiOutlineShop, AiOutlineUser } from "react-icons/ai";
 import { RemoveScrollBar } from "react-remove-scroll-bar";
 import { noScrollbarsClassName } from "react-remove-scroll-bar";
 import { CiDeliveryTruck } from "react-icons/ci";
-import Logo from "../../assets/images/logo.jpg";
+import Logo from "../../assets/images/logo.png";
 import { useEffect } from "react";
 import { BsBagCheck } from "react-icons/bs";
 
@@ -285,11 +285,11 @@ const Navbar = ({ isAuth, basketProductsLength, wishListsLength }) => {
               <div className="grid grid-cols-10 nav-grid">
                 <div className="bottom-left grid grid-cols-10 gap-x-2">
                   <Link
-                    className="flex items-center logo-block font-bold text-[22px]"
+                    className="flex items-center justify-center logo-block font-bold text-[22px]"
                     to="/"
                   >
-                    {/* <img className="navbar-logo" src={Logo} alt="LOGO" /> */}
-                    OSONBAZAR
+                    <img className="navbar-logo" src={Logo} alt="LOGO" />
+                    {/* OSONBAZAR */}
                   </Link>
                   <div className="pr-4 pl-2 catalog-block">
                     <div
@@ -312,8 +312,8 @@ const Navbar = ({ isAuth, basketProductsLength, wishListsLength }) => {
                     <HiBars3 size={24} />
                   </div>
                   <Link to="/" className="mobile-logo text-center font-bold">
-                    {/* <img src={Logo} alt="" /> */}
-                    OSONBAZAR
+                    <img src={Logo} alt="" />
+                    {/* OSONBAZAR */}
                   </Link>
                   <a
                     href="https://seller.osonbazar.uz"

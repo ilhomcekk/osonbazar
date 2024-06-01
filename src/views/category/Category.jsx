@@ -15,12 +15,12 @@ const Category = ({ categories }) => {
   return (
     <div className="my-4">
       <Container maxWidth="xl">
-        <div className="category-slider category-slider grid xl:grid-cols-5 lg:grid-cols-4 grid-cols-2 gap-y-4">
+        <div className="category-slider category-slider grid xl:grid-cols-6 lg:grid-cols-4 grid-cols-2 gap-y-4">
           {categories.length === 0
-            ? new Array(5).fill(3).map((_, index) => (
+            ? new Array(6).fill(3).map((_, index) => (
                 <div key={index}>
                   <Skeleton
-                    variant="rectangular"
+                    variant="circular"
                     width="220px"
                     height="96px"
                     animation="wave"
@@ -36,14 +36,16 @@ const Category = ({ categories }) => {
                         to={`/products-by-category/${item.slug}`}
                         className="category-box"
                       >
-                        <img
-                          src={
-                            item.background_image
-                              ? API_URL + item.background_image
-                              : "https://static.vecteezy.com/system/resources/thumbnails/004/141/669/small/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg"
-                          }
-                          alt=""
-                        />
+                        <div className="bg-[#f5f5f6] rounded-full p-4">
+                          <img
+                            src={
+                              item.background_image
+                                ? API_URL + item.background_image
+                                : "https://static.vecteezy.com/system/resources/thumbnails/004/141/669/small/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg"
+                            }
+                            alt=""
+                          />
+                        </div>
                         <div>{item.name}</div>
                       </Link>
                     </div>
