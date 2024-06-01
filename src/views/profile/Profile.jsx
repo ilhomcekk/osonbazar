@@ -99,7 +99,7 @@ const Profile = () => {
           <div className="xl:col-span-8 lg:col-span-4">
             <Title title="Персональные данные" style="f-medium" />
             <div className="grid lg:grid-cols-6 gap-x-4 lg:gap-y-0 gap-y-1 mt-8">
-              <div>ID пользователя:</div>
+              <div>Sizning ID:</div>
               <div
                 className="col-span-4 flex items-center justify-center h-px bg-black m-auto"
                 style={{ width: "-webkit-fill-available" }}
@@ -107,7 +107,7 @@ const Profile = () => {
               <div>{user?.id}</div>
             </div>
             <div className="grid lg:grid-cols-6 gap-x-4 lg:gap-y-0 gap-y-1 mt-8">
-              <div>Имя и фамилия:</div>
+              <div>Ismingiz va Familiyangiz:</div>
               <div
                 className="col-span-4 flex items-center justify-center h-px bg-black m-auto"
                 style={{ width: "-webkit-fill-available" }}
@@ -117,7 +117,7 @@ const Profile = () => {
               </div>
             </div>
             <div className="grid lg:grid-cols-6 gap-x-4 lg:gap-y-0 gap-y-1 mt-8">
-              <div>Номер телефона:</div>
+              <div>Telefon raqamingiz:</div>
               <div
                 className="col-span-4 flex items-center justify-center h-px bg-black m-auto"
                 style={{ width: "-webkit-fill-available" }}
@@ -125,7 +125,7 @@ const Profile = () => {
               <div>{user.phone_number}</div>
             </div>
             <div className="grid lg:grid-cols-6 gap-x-4 lg:gap-y-0 gap-y-1 mt-8">
-              <div>Текущий пароль:</div>
+              <div>Parolingiz:</div>
               <div
                 className="col-span-4 flex items-center justify-center h-px bg-black m-auto"
                 style={{ width: "-webkit-fill-available" }}
@@ -140,7 +140,7 @@ const Profile = () => {
                 style={{ color: "#e44542" }}
                 onClick={handleClickOpenModal}
               >
-                Изменить
+                O'zgartirish
               </Button>
               <Button
                 color="error"
@@ -152,7 +152,7 @@ const Profile = () => {
                 }}
                 style={{ color: "#e44542" }}
               >
-                Выйти
+                Chiqish
               </Button>
             </div>
           </div>

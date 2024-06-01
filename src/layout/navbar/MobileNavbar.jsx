@@ -13,7 +13,7 @@ const MobileNavbar = () => {
 
   return (
     <div className="mobile-navbar border-t">
-      <a href="https://seller.OsonBazar.uz/dashboard" className="col-span-4">
+      <a href="https://seller.osonbazar.uz" className="col-span-4">
         Adminlar uchun
       </a>
       <Link to="/" className={`${pathname === "/" && "router-active"}`}>

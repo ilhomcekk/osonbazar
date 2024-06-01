@@ -332,7 +332,7 @@ const DetailAdminProduct = ({ products, user }) => {
               onClick={handleSubmit}
               className="yellow-btn-hover !w-full !text-[20px] !mt-8 !py-3"
             >
-              <span className="!text-[#ff0000] f-medium">Buyurtma berish</span>
+              <span className="!text-white f-medium">Buyurtma berish</span>
             </Button>
             {/* {productDetail?.attribute_values?.map((item, i) => (
               <div className="mt-4 flex items-center gap-x-4 gap-y-2" key={i}>

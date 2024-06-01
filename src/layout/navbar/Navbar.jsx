@@ -296,8 +296,10 @@ const Navbar = ({ isAuth, basketProductsLength, wishListsLength }) => {
                       onClick={handleClickOpenModal}
                       className="catalog-btn hover:!shadow-lg cursor-pointer flex gap-x-3 items-center justify-center h-full"
                     >
-                      <HiBars3 size={24} />
-                      <div className="mobile-hidden-text">Katalog</div>
+                      <HiBars3 size={24} color="#fff" />
+                      <div className="mobile-hidden-text !text-white">
+                        Katalog
+                      </div>
                     </div>
                   </div>
                   <NavbarSearch />
@@ -313,13 +315,15 @@ const Navbar = ({ isAuth, basketProductsLength, wishListsLength }) => {
                     {/* <img src={Logo} alt="" /> */}
                     OSONBAZAR
                   </Link>
-                  <div
-                    onClick={() => navigate("/special-order")}
+                  <a
+                    href="https://seller.osonbazar.uz"
                     className="cursor-pointer plane px-2 cursor-pointer flex flex-col text-center items-center justify-between"
                   >
-                    <SlPlane size={24} />
-                    <div className="mobile-hidden-text">Adminlar uchun</div>
-                  </div>
+                    <SlPlane size={24} color="#fff" />
+                    <div className="mobile-hidden-text !text-white">
+                      Adminlar uchun
+                    </div>
+                  </a>
                   <div
                     onClick={() => navigate("/profile/order")}
                     className="profile-icon md:flex hidden cursor-pointer flex flex-col text-center items-center justify-between"

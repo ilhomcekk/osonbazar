@@ -23,7 +23,7 @@ const Favorites = () => {
             </div>
           ) : (
             <div className="flex items-center justify-center mt-10">
-              <h2 className="text-2xl">Нет избранных товаров</h2>
+              <h2 className="text-2xl">Tanlangan mahsulotlar yo'q</h2>
             </div>
           )}
         </div>
