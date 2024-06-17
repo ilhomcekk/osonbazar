@@ -31,6 +31,8 @@ import Category from "./views/filter/Category";
 import ProductsByCategory from "./views/products/ProductsByCategory";
 import NotFoundPage from "./views/NotFoundPage";
 import OrderSuccess from "./views/order-success/OrderSuccess";
+import StockDetail from "./views/stockDetail/StockDetail";
+import Qr from "./views/qr/Qr";
 
 const Router = () => {
   return (
@@ -62,6 +64,8 @@ const Router = () => {
           path="/products-by-category/:slug"
           element={<ProductsByCategory />}
         />
+        <Route path="/stock/:id" element={<StockDetail />} />
+        <Route path="/order/:id" element={<Qr />} />
         {/* <Route path="/stock" element={<Stock />} /> */}
         <Route path="/order-success" element={<OrderSuccess />} />
         <Route element={<PrivateRoutes />}>

@@ -15,7 +15,7 @@ const Category = ({ categories }) => {
   return (
     <div className="my-4">
       <Container maxWidth="xl">
-        <div className="category-slider category-slider grid xl:grid-cols-6 lg:grid-cols-4 grid-cols-2 gap-y-4">
+        <div className="category-slider category-slider grid xl:grid-cols-6 lg:grid-cols-4 grid-cols-3 gap-y-4">
           {categories.length === 0
             ? new Array(6).fill(3).map((_, index) => (
                 <div key={index}>
@@ -36,7 +36,7 @@ const Category = ({ categories }) => {
                         to={`/products-by-category/${item.slug}`}
                         className="category-box"
                       >
-                        <div className="bg-[#f5f5f6] rounded-full p-4">
+                        <div className="bg-[#f5f5f6] rounded-full md:p-4">
                           <img
                             src={
                               item.background_image
@@ -46,7 +46,9 @@ const Category = ({ categories }) => {
                             alt=""
                           />
                         </div>
-                        <div>{item.name}</div>
+                        <div className="max-md:h-[30.8px] max-md:line-clamp-2 max-md:px-2 max-md:leading-[1.1]">
+                          {item.name}
+                        </div>
                       </Link>
                     </div>
                   )

@@ -74,7 +74,7 @@
       }
       @media (max-width: 767px) {
         height: 32px !important;
-        display: none;
+        // display: none;
       }
       .logo-block {
         @media (min-width: 1360px) {
@@ -132,7 +132,7 @@
       @media (max-width: 767px) {
         grid-column: span 10 / span 10;
         height: 32px;
-        display: none;
+        // display: none;
       }
       > svg {
         @media (max-width: 767px) {
@@ -218,21 +218,21 @@
       }
       .mobile-logo {
         display: none;
-        @media (max-width: 960px) {
-          display: block;
-          height: 50px;
-          width: -webkit-fill-available;
-          max-width: 140px;
-        }
-        @media (max-width: 767px) {
-          margin-right: auto !important;
-          margin-left: auto !important;
-          height: 40px;
-        }
-        img {
-          height: 100%;
-          margin: auto;
-        }
+        // @media (max-width: 960px) {
+        //   display: block;
+        //   height: 50px;
+        //   width: -webkit-fill-available;
+        //   max-width: 140px;
+        // }
+        // @media (max-width: 767px) {
+        //   margin-right: auto !important;
+        //   margin-left: auto !important;
+        //   height: 40px;
+        // }
+        // img {
+        //   height: 100%;
+        //   margin: auto;
+        // }
       }
     }
     .plane {

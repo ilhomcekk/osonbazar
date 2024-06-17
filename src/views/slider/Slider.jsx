@@ -12,9 +12,8 @@ const HomeSlider = () => {
   const [sliders, setSliders] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  console.log(loading);
   const fetchSliders = async () => {
-    const response = await fetch(API_URL + "dashboard/sliders/");
+    const response = await fetch(API_URL + "product/sliders/");
     const sliders = await response.json();
     let slidersResult = sliders.results;
     if (sliders.count === 0) return;
@@ -25,6 +24,7 @@ const HomeSlider = () => {
   useEffect(() => {
     fetchSliders();
   }, []);
+  console.log(sliders);
 
   return (
     <>
@@ -37,6 +37,7 @@ const HomeSlider = () => {
           autoplaySpeed={5000}
           slidesToShow={1}
           slidesToScroll={1}
+          centerMode
           nextArrow={<SlickArrowRight size={16} stroke="#000" fill="#fff" />}
           prevArrow={<SlickArrowLeft size={16} stroke="#000" fill="#fff" />}
         >
@@ -49,9 +50,11 @@ const HomeSlider = () => {
             />
           ) : (
             sliders?.map((item) => (
-              <a href={item.url} key={item.id}>
-                <img src={item.images} alt="" />
-              </a>
+              <div>
+                <a href={item.url} key={item.id}>
+                  <img src={item.image} alt="" />
+                </a>
+              </div>
             ))
           )}
         </Slider>

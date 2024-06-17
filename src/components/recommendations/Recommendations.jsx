@@ -37,7 +37,7 @@ const Recommendations = () => {
         <Link to="">
           <Title title={"Tanlangan mahsulotlar"} className="mt-8 mb-4 red" />
         </Link>
-        <div className="grid 2xl:grid-cols-6 xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-2">
+        <div className="grid 2xl:grid-cols-6 xl:grid-cols-5 lg:grid-cols-4 grid-cols-2">
           {loading
             ? new Array(6)
                 .fill(1)
